@@ -1,0 +1,31 @@
+name: ghaf-auto
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Update input ghaf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v18
+      - name: build
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GHA_SSH_PRIVATE_KEY }}
+        run: |
+          git checkout ghaf-latest-auto
+          nix flake lock --update-input ghaf
+          [[ "$(git status --short | wc -l)" == "0" ]] && echo "No changes" && exit 0
+          nix flake show
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          git config --global user.email "nomail@localhost"
+          git config --global user.name "Github Actions Runner"
+          git commit -m "Github Actions Auto Update for ghaf"
+          git push

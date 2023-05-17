@@ -56,6 +56,6 @@
       }))
 
       # Hydra jobs
-      (import ./hydrajobs.nix {inherit ghaf;})
+      (import ./hydrajobs.nix {inherit nixpkgs ghaf;})
     ];
 }
