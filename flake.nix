@@ -5,6 +5,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.11";
+    nixpkgs-new.url = "github:nixos/nixpkgs/nixos-22.11";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
@@ -20,6 +22,10 @@
       url = "github:anduril/jetpack-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    jetpack-nixos-new = {
+      url = "github:anduril/jetpack-nixos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     ghaf = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -31,17 +37,56 @@
         jetpack-nixos.follows = "jetpack-nixos";
       };
     };
+    ghaf-newnixos = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-new";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos";
+      };
+    };
+    ghaf-nixos-unstable = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-unstable";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos";
+      };
+    };
+    ghaf-nixos-unstable-newjetpack = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-unstable";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos-new";
+      };
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-new,
+    nixpkgs-unstable,
     flake-utils,
     nixos-generators,
     nixos-hardware,
     microvm,
     jetpack-nixos,
+    jetpack-nixos-new,
     ghaf,
+    ghaf-newnixos,
+    ghaf-nixos-unstable,
+    ghaf-nixos-unstable-newjetpack,
   }: let
     systems = with flake-utils.lib.system; [
       x86_64-linux
@@ -57,5 +102,41 @@
 
       # Hydra jobs
       (import ./hydrajobs.nix {inherit nixpkgs ghaf;})
+
+      # New stable NixOS
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-newnixos;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # NixOS Unstable
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos-unstable-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-nixos-unstable;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # NixOS Unstable + New Jetpack NixOS
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos-unstable-newjetpack-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-nixos-unstable-newjetpack;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
     ];
 }
