@@ -130,7 +130,7 @@
       # NixOS Unstable + New Jetpack NixOS
       {
         hydraJobs = (
-          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos-unstable-newjetpack-" + name) value)
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("unstable-newjp-" + name) value)
           (import ./hydrajobs.nix {
             ghaf = ghaf-nixos-unstable-newjetpack;
             inherit nixpkgs;
