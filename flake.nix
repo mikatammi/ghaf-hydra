@@ -6,6 +6,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.11";
     nixpkgs-new.url = "github:nixos/nixpkgs/nixos-22.11";
+    nixpkgs-2305.url = "github:nixos/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     nixos-generators = {
@@ -48,6 +49,28 @@
         jetpack-nixos.follows = "jetpack-nixos";
       };
     };
+    ghaf-nixos2305 = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-2305";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos";
+      };
+    };
+    ghaf-nixos2305-newjetpack = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-2305";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos-new";
+      };
+    };
     ghaf-nixos-unstable = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -76,6 +99,7 @@
     self,
     nixpkgs,
     nixpkgs-new,
+    nixpkgs-2305,
     nixpkgs-unstable,
     flake-utils,
     nixos-generators,
@@ -85,6 +109,8 @@
     jetpack-nixos-new,
     ghaf,
     ghaf-newnixos,
+    ghaf-nixos2305,
+    ghaf-nixos2305-newjetpack,
     ghaf-nixos-unstable,
     ghaf-nixos-unstable-newjetpack,
   }: let
@@ -109,6 +135,30 @@
           nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-" + name) value)
           (import ./hydrajobs.nix {
             ghaf = ghaf-newnixos;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # NixOS 23.05
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos2305-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-nixos2305;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # NixOS 23.05 + New Jetpack NixOS
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos2305-newjp-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-nixos2305-newjetpack;
             inherit nixpkgs;
           })
           .hydraJobs
