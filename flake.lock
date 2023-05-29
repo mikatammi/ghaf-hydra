@@ -173,6 +173,41 @@
         "type": "github"
       }
     },
+    "ghaf-newnixos-newjetpack": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "jetpack-nixos": [
+          "jetpack-nixos-new"
+        ],
+        "microvm": [
+          "microvm"
+        ],
+        "nixos-generators": [
+          "nixos-generators"
+        ],
+        "nixos-hardware": [
+          "nixos-hardware"
+        ],
+        "nixpkgs": [
+          "nixpkgs-new"
+        ]
+      },
+      "locked": {
+        "lastModified": 1685364989,
+        "narHash": "sha256-+XBjZPb8uQ7ed6OLccnGXkeMNmDqIPFKLI7Pel1jBN4=",
+        "owner": "tiiuae",
+        "repo": "ghaf",
+        "rev": "d0b52af292e617b72d775d893b6db21bba255c9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tiiuae",
+        "repo": "ghaf",
+        "type": "github"
+      }
+    },
     "ghaf-nixos-unstable": {
       "inputs": {
         "flake-utils": [
@@ -227,76 +262,6 @@
         ],
         "nixpkgs": [
           "nixpkgs-unstable"
-        ]
-      },
-      "locked": {
-        "lastModified": 1685364989,
-        "narHash": "sha256-+XBjZPb8uQ7ed6OLccnGXkeMNmDqIPFKLI7Pel1jBN4=",
-        "owner": "tiiuae",
-        "repo": "ghaf",
-        "rev": "d0b52af292e617b72d775d893b6db21bba255c9f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tiiuae",
-        "repo": "ghaf",
-        "type": "github"
-      }
-    },
-    "ghaf-nixos2305": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "jetpack-nixos": [
-          "jetpack-nixos"
-        ],
-        "microvm": [
-          "microvm"
-        ],
-        "nixos-generators": [
-          "nixos-generators"
-        ],
-        "nixos-hardware": [
-          "nixos-hardware"
-        ],
-        "nixpkgs": [
-          "nixpkgs-2305"
-        ]
-      },
-      "locked": {
-        "lastModified": 1685364989,
-        "narHash": "sha256-+XBjZPb8uQ7ed6OLccnGXkeMNmDqIPFKLI7Pel1jBN4=",
-        "owner": "tiiuae",
-        "repo": "ghaf",
-        "rev": "d0b52af292e617b72d775d893b6db21bba255c9f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tiiuae",
-        "repo": "ghaf",
-        "type": "github"
-      }
-    },
-    "ghaf-nixos2305-newjetpack": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "jetpack-nixos": [
-          "jetpack-nixos-new"
-        ],
-        "microvm": [
-          "microvm"
-        ],
-        "nixos-generators": [
-          "nixos-generators"
-        ],
-        "nixos-hardware": [
-          "nixos-hardware"
-        ],
-        "nixpkgs": [
-          "nixpkgs-2305"
         ]
       },
       "locked": {
@@ -582,22 +547,6 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1685314633,
-        "narHash": "sha256-8LXBPqTQXl5ofkjpJ18JcbmLJ/lWDoMxtUwiDYv0wro=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "c8a17ce7abc03c50cd072e9e6c9b389c5f61836b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-22.11",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-2305": {
-      "locked": {
         "lastModified": 1685272473,
         "narHash": "sha256-oHNi6BgcGquKDkVN1/awsh+KLBey+Nj3ejTVH585upU=",
         "owner": "nixos",
@@ -614,16 +563,16 @@
     },
     "nixpkgs-new": {
       "locked": {
-        "lastModified": 1685314633,
-        "narHash": "sha256-8LXBPqTQXl5ofkjpJ18JcbmLJ/lWDoMxtUwiDYv0wro=",
+        "lastModified": 1685272473,
+        "narHash": "sha256-oHNi6BgcGquKDkVN1/awsh+KLBey+Nj3ejTVH585upU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c8a17ce7abc03c50cd072e9e6c9b389c5f61836b",
+        "rev": "a7adeadc7d4033048592fac7c87ca888d2a99d31",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-22.11",
+        "ref": "nixos-23.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -652,10 +601,9 @@
         "ghaf-allnew": "ghaf-allnew",
         "ghaf-allunstable": "ghaf-allunstable",
         "ghaf-newnixos": "ghaf-newnixos",
+        "ghaf-newnixos-newjetpack": "ghaf-newnixos-newjetpack",
         "ghaf-nixos-unstable": "ghaf-nixos-unstable",
         "ghaf-nixos-unstable-newjetpack": "ghaf-nixos-unstable-newjetpack",
-        "ghaf-nixos2305": "ghaf-nixos2305",
-        "ghaf-nixos2305-newjetpack": "ghaf-nixos2305-newjetpack",
         "jetpack-nixos": "jetpack-nixos",
         "jetpack-nixos-new": "jetpack-nixos-new",
         "jetpack-nixos-unstable": "jetpack-nixos-unstable",
@@ -668,7 +616,6 @@
         "nixos-hardware": "nixos-hardware",
         "nixos-hardware-new": "nixos-hardware-new",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-2305": "nixpkgs-2305",
         "nixpkgs-new": "nixpkgs-new",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }
