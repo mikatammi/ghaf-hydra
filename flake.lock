@@ -58,11 +58,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -93,11 +93,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -128,11 +128,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -163,11 +163,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -198,11 +198,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -233,11 +233,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -268,11 +268,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690607635,
-        "narHash": "sha256-zn44/Qr6ha76btKUjtD6aF2b2gSZPPlXp3Tu51KHjU0=",
+        "lastModified": 1690658288,
+        "narHash": "sha256-S1DAYWajasgLJmSk1xSH4dwpVoUqRHH+rtyPFT1CTrM=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "bf18061a6f81e708408bca10621291f802fa4c90",
+        "rev": "69aa97d7f78f1ec0cfe0c633dd78a1c862c5e60a",
         "type": "github"
       },
       "original": {
@@ -351,11 +351,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690231039,
-        "narHash": "sha256-O5mIDXhe4FAEdRpoVxVtg003/UUNweUTu14cdNT8SLE=",
+        "lastModified": 1690637422,
+        "narHash": "sha256-hSEkpMhbQUcYLkKwOM5NiaSQ78NdPkosqcYc1TyMog8=",
         "owner": "astro",
         "repo": "microvm.nix",
-        "rev": "062fd71f2a8f25c5d80864eb99bdff98e1684efb",
+        "rev": "38260452faac611b03cb8a03cf4ba78999587f5e",
         "type": "github"
       },
       "original": {
