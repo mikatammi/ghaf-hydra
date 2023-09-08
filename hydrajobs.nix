@@ -8,7 +8,7 @@
 in {
   hydraJobs = lib.foldr lib.recursiveUpdate {} (
     lib.mapAttrsToList (architecture: value: (
-      lib.concatMapAttrs (pname: package: {${pname} = {${architecture} = package;};}) value
+      lib.concatMapAttrs (pname: package: {${pname} = {${architecture} = package // {meta.timeout = 50 * 60 * 60;};};}) value
     ))
     ghaf.packages
   );
