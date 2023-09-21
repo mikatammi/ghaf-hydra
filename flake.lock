@@ -308,11 +308,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1695332189,
-        "narHash": "sha256-cDSn5kl6sv5T6wc67niHFTUMWLo1B1tgCDuTqWd6DiM=",
+        "lastModified": 1695338469,
+        "narHash": "sha256-yrsaDmg/aQTXRo2sgbsz65MAI/KJoeMSkNGc02vByOY=",
         "owner": "anduril",
         "repo": "jetpack-nixos",
-        "rev": "a6aef6a8a25d17dcd5e70bf28674d18c08df0793",
+        "rev": "aa6c8ef864702a12ed2441675a4a8cec98ac758e",
         "type": "github"
       },
       "original": {
@@ -328,11 +328,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1695332189,
-        "narHash": "sha256-cDSn5kl6sv5T6wc67niHFTUMWLo1B1tgCDuTqWd6DiM=",
+        "lastModified": 1695338469,
+        "narHash": "sha256-yrsaDmg/aQTXRo2sgbsz65MAI/KJoeMSkNGc02vByOY=",
         "owner": "anduril",
         "repo": "jetpack-nixos",
-        "rev": "a6aef6a8a25d17dcd5e70bf28674d18c08df0793",
+        "rev": "aa6c8ef864702a12ed2441675a4a8cec98ac758e",
         "type": "github"
       },
       "original": {
