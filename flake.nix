@@ -61,6 +61,17 @@
         jetpack-nixos.follows = "jetpack-nixos";
       };
     };
+    ghaf-gnome = {
+      url = "github:mikatammi/ghaf/gnome";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos";
+      };
+    };
     ghaf-newnixos = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -116,6 +127,17 @@
         jetpack-nixos.follows = "jetpack-nixos-new";
       };
     };
+    ghaf-gnome-allnew = {
+      url = "github:mikatammi/ghaf/gnome";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-new";
+        flake-utils.follows = "flake-utils-new";
+        nixos-generators.follows = "nixos-generators-new";
+        nixos-hardware.follows = "nixos-hardware-new";
+        microvm.follows = "microvm-new";
+        jetpack-nixos.follows = "jetpack-nixos-new";
+      };
+    };
     ghaf-allunstable = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -148,11 +170,13 @@
     jetpack-nixos-new,
     jetpack-nixos-unstable,
     ghaf,
+    ghaf-gnome,
     ghaf-newnixos,
     ghaf-newnixos-newjetpack,
     ghaf-nixos-unstable,
     ghaf-nixos-unstable-newjetpack,
     ghaf-allnew,
+    ghaf-gnome-allnew,
     ghaf-allunstable,
   }: let
     systems = with flake-utils.lib.system; [
@@ -169,6 +193,30 @@
 
       # Hydra jobs
       (import ./hydrajobs.nix {inherit nixpkgs ghaf;})
+
+      # NixOS + Gnome
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-gnome-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-gnome;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # NixOS + Gnome
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-gnome-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-gnome-allnew;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
 
       # New stable NixOS
       {
