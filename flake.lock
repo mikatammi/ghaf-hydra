@@ -141,6 +141,78 @@
         "type": "github"
       }
     },
+    "ghaf-gnome": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "jetpack-nixos": [
+          "jetpack-nixos"
+        ],
+        "microvm": [
+          "microvm"
+        ],
+        "nixos-generators": [
+          "nixos-generators"
+        ],
+        "nixos-hardware": [
+          "nixos-hardware"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1695637309,
+        "narHash": "sha256-ZmHRAmHbCKuKjwr9HUsmWP5KLGHLH5lsB6boQOgLFRM=",
+        "owner": "mikatammi",
+        "repo": "ghaf",
+        "rev": "18e78075c59daa4d87afda670e15f735c94cb1da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mikatammi",
+        "ref": "gnome",
+        "repo": "ghaf",
+        "type": "github"
+      }
+    },
+    "ghaf-gnome-allnew": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils-new"
+        ],
+        "jetpack-nixos": [
+          "jetpack-nixos-new"
+        ],
+        "microvm": [
+          "microvm-new"
+        ],
+        "nixos-generators": [
+          "nixos-generators-new"
+        ],
+        "nixos-hardware": [
+          "nixos-hardware-new"
+        ],
+        "nixpkgs": [
+          "nixpkgs-new"
+        ]
+      },
+      "locked": {
+        "lastModified": 1695637309,
+        "narHash": "sha256-ZmHRAmHbCKuKjwr9HUsmWP5KLGHLH5lsB6boQOgLFRM=",
+        "owner": "mikatammi",
+        "repo": "ghaf",
+        "rev": "18e78075c59daa4d87afda670e15f735c94cb1da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mikatammi",
+        "ref": "gnome",
+        "repo": "ghaf",
+        "type": "github"
+      }
+    },
     "ghaf-newnixos": {
       "inputs": {
         "flake-utils": [
@@ -603,6 +675,8 @@
         "ghaf": "ghaf",
         "ghaf-allnew": "ghaf-allnew",
         "ghaf-allunstable": "ghaf-allunstable",
+        "ghaf-gnome": "ghaf-gnome",
+        "ghaf-gnome-allnew": "ghaf-gnome-allnew",
         "ghaf-newnixos": "ghaf-newnixos",
         "ghaf-newnixos-newjetpack": "ghaf-newnixos-newjetpack",
         "ghaf-nixos-unstable": "ghaf-nixos-unstable",
