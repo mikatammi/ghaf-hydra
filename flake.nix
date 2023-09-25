@@ -209,7 +209,7 @@
       # NixOS + Gnome
       {
         hydraJobs = (
-          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-gnome-" + name) value)
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("allnew-gnome-" + name) value)
           (import ./hydrajobs.nix {
             ghaf = ghaf-gnome-allnew;
             inherit nixpkgs;
