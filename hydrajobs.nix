@@ -13,7 +13,12 @@ in {
         then "x86_64-linux"
         else architecture1;
     in (
-      lib.concatMapAttrs (pname: package: {"${lib.optionalString (architecture == "riscv64-linux") (architecture + "-")}${pname}" = {${architecture} = package // {meta.timeout = 50 * 60 * 60;};};}) value
+      lib.concatMapAttrs (pname: package: {
+        "${lib.optionalString (architecture1 == "riscv64-linux") (architecture1 + "-")}${pname}" = {
+          ${architecture} = package // {meta.timeout = 50 * 60 * 60;};
+        };
+      })
+      value
     ))
     ghaf.packages
   );
