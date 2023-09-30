@@ -7,8 +7,13 @@
   lib = nixpkgs.lib;
 in {
   hydraJobs = lib.foldr lib.recursiveUpdate {} (
-    lib.mapAttrsToList (architecture: value: (
-      lib.concatMapAttrs (pname: package: {${pname} = {${architecture} = package // {meta.timeout = 50 * 60 * 60;};};}) value
+    lib.mapAttrsToList (architecture1: value: let
+      architecture =
+        if architecture1 == "riscv64-linux"
+        then "x86_64-linux"
+        else architecture1;
+    in (
+      lib.concatMapAttrs (pname: package: {"${lib.optionalString (architecture == "riscv64-linux") (architecture + "-")}${pname}" = {${architecture} = package // {meta.timeout = 50 * 60 * 60;};};}) value
     ))
     ghaf.packages
   );
