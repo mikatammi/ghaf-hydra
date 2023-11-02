@@ -374,11 +374,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1698882985,
-        "narHash": "sha256-0of8RrrfQGco9kiLW4vXpI8n4aGFRp+sPdCWKkkN8XY=",
+        "lastModified": 1698964702,
+        "narHash": "sha256-0ouAgFXWN6BhhSFydpUP79Uf6C8QisDHJ+F+Fwnu3+M=",
         "owner": "astro",
         "repo": "microvm.nix",
-        "rev": "402333c6e461e0af422e305eb680b4ea9d973b06",
+        "rev": "d07c3efd42a93d576da2ba6569818b6edb0cbe18",
         "type": "github"
       },
       "original": {
@@ -397,11 +397,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1698882985,
-        "narHash": "sha256-0of8RrrfQGco9kiLW4vXpI8n4aGFRp+sPdCWKkkN8XY=",
+        "lastModified": 1698964702,
+        "narHash": "sha256-0ouAgFXWN6BhhSFydpUP79Uf6C8QisDHJ+F+Fwnu3+M=",
         "owner": "astro",
         "repo": "microvm.nix",
-        "rev": "402333c6e461e0af422e305eb680b4ea9d973b06",
+        "rev": "d07c3efd42a93d576da2ba6569818b6edb0cbe18",
         "type": "github"
       },
       "original": {
