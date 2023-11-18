@@ -72,17 +72,6 @@
         jetpack-nixos.follows = "jetpack-nixos";
       };
     };
-    ghaf-newnixos-newjetpack = {
-      url = "github:tiiuae/ghaf";
-      inputs = {
-        nixpkgs.follows = "nixpkgs-new";
-        flake-utils.follows = "flake-utils";
-        nixos-generators.follows = "nixos-generators";
-        nixos-hardware.follows = "nixos-hardware";
-        microvm.follows = "microvm";
-        jetpack-nixos.follows = "jetpack-nixos-new";
-      };
-    };
     ghaf-nixos-unstable = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -92,17 +81,6 @@
         nixos-hardware.follows = "nixos-hardware";
         microvm.follows = "microvm";
         jetpack-nixos.follows = "jetpack-nixos";
-      };
-    };
-    ghaf-nixos-unstable-newjetpack = {
-      url = "github:tiiuae/ghaf";
-      inputs = {
-        nixpkgs.follows = "nixpkgs-unstable";
-        flake-utils.follows = "flake-utils";
-        nixos-generators.follows = "nixos-generators";
-        nixos-hardware.follows = "nixos-hardware";
-        microvm.follows = "microvm";
-        jetpack-nixos.follows = "jetpack-nixos-new";
       };
     };
     ghaf-allnew = {
@@ -149,9 +127,7 @@
     jetpack-nixos-unstable,
     ghaf,
     ghaf-newnixos,
-    ghaf-newnixos-newjetpack,
     ghaf-nixos-unstable,
-    ghaf-nixos-unstable-newjetpack,
     ghaf-allnew,
     ghaf-allunstable,
   }: let
@@ -182,36 +158,12 @@
         );
       }
 
-      # New stable NixOS + New Jetpack NixOS
-      {
-        hydraJobs = (
-          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-newjp-" + name) value)
-          (import ./hydrajobs.nix {
-            ghaf = ghaf-newnixos-newjetpack;
-            inherit nixpkgs;
-          })
-          .hydraJobs
-        );
-      }
-
       # NixOS Unstable
       {
         hydraJobs = (
           nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos-unstable-" + name) value)
           (import ./hydrajobs.nix {
             ghaf = ghaf-nixos-unstable;
-            inherit nixpkgs;
-          })
-          .hydraJobs
-        );
-      }
-
-      # NixOS Unstable + New Jetpack NixOS
-      {
-        hydraJobs = (
-          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("unstable-newjp-" + name) value)
-          (import ./hydrajobs.nix {
-            ghaf = ghaf-nixos-unstable-newjetpack;
             inherit nixpkgs;
           })
           .hydraJobs
