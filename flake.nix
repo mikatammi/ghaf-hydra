@@ -6,6 +6,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
     nixpkgs-new.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs-2311.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-utils-new.url = "github:numtide/flake-utils";
@@ -72,6 +73,17 @@
         jetpack-nixos.follows = "jetpack-nixos";
       };
     };
+    ghaf-2311 = {
+      url = "github:tiiuae/ghaf";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-2311";
+        flake-utils.follows = "flake-utils";
+        nixos-generators.follows = "nixos-generators";
+        nixos-hardware.follows = "nixos-hardware";
+        microvm.follows = "microvm";
+        jetpack-nixos.follows = "jetpack-nixos";
+      };
+    };
     ghaf-nixos-unstable = {
       url = "github:tiiuae/ghaf";
       inputs = {
@@ -111,6 +123,7 @@
     self,
     nixpkgs,
     nixpkgs-new,
+    nixpkgs-2311,
     nixpkgs-unstable,
     flake-utils,
     flake-utils-new,
@@ -127,6 +140,7 @@
     jetpack-nixos-unstable,
     ghaf,
     ghaf-newnixos,
+    ghaf-2311,
     ghaf-nixos-unstable,
     ghaf-allnew,
     ghaf-allunstable,
@@ -152,6 +166,18 @@
           nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("newnixos-" + name) value)
           (import ./hydrajobs.nix {
             ghaf = ghaf-newnixos;
+            inherit nixpkgs;
+          })
+          .hydraJobs
+        );
+      }
+
+      # New NixOS 23.11
+      {
+        hydraJobs = (
+          nixpkgs.lib.mapAttrs' (name: value: nixpkgs.lib.nameValuePair ("nixos2311-" + name) value)
+          (import ./hydrajobs.nix {
+            ghaf = ghaf-2311;
             inherit nixpkgs;
           })
           .hydraJobs
