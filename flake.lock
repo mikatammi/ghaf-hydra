@@ -905,11 +905,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1709845133,
-        "narHash": "sha256-l+ZrX6p5Vg3fP8qbLKxESrQKPHY7+QJhUUYGg6kBsG4=",
+        "lastModified": 1709849113,
+        "narHash": "sha256-OH2XEXKGB/7mzBilx3kDe2nFEjXymQzXG7WQ9zwUcYE=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "85d19af0d3b29fdb2cf4a6db0669934b948bc6d6",
+        "rev": "2f9b7fd044b9182c97b18caa6143d13089a7f90b",
         "type": "github"
       },
       "original": {
@@ -952,11 +952,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1709845133,
-        "narHash": "sha256-l+ZrX6p5Vg3fP8qbLKxESrQKPHY7+QJhUUYGg6kBsG4=",
+        "lastModified": 1709849113,
+        "narHash": "sha256-OH2XEXKGB/7mzBilx3kDe2nFEjXymQzXG7WQ9zwUcYE=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "85d19af0d3b29fdb2cf4a6db0669934b948bc6d6",
+        "rev": "2f9b7fd044b9182c97b18caa6143d13089a7f90b",
         "type": "github"
       },
       "original": {
@@ -999,11 +999,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1709845133,
-        "narHash": "sha256-l+ZrX6p5Vg3fP8qbLKxESrQKPHY7+QJhUUYGg6kBsG4=",
+        "lastModified": 1709849113,
+        "narHash": "sha256-OH2XEXKGB/7mzBilx3kDe2nFEjXymQzXG7WQ9zwUcYE=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "85d19af0d3b29fdb2cf4a6db0669934b948bc6d6",
+        "rev": "2f9b7fd044b9182c97b18caa6143d13089a7f90b",
         "type": "github"
       },
       "original": {
@@ -1046,11 +1046,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1709845133,
-        "narHash": "sha256-l+ZrX6p5Vg3fP8qbLKxESrQKPHY7+QJhUUYGg6kBsG4=",
+        "lastModified": 1709849113,
+        "narHash": "sha256-OH2XEXKGB/7mzBilx3kDe2nFEjXymQzXG7WQ9zwUcYE=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "85d19af0d3b29fdb2cf4a6db0669934b948bc6d6",
+        "rev": "2f9b7fd044b9182c97b18caa6143d13089a7f90b",
         "type": "github"
       },
       "original": {
@@ -1093,11 +1093,11 @@
         "treefmt-nix": "treefmt-nix_5"
       },
       "locked": {
-        "lastModified": 1709845133,
-        "narHash": "sha256-l+ZrX6p5Vg3fP8qbLKxESrQKPHY7+QJhUUYGg6kBsG4=",
+        "lastModified": 1709849113,
+        "narHash": "sha256-OH2XEXKGB/7mzBilx3kDe2nFEjXymQzXG7WQ9zwUcYE=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "85d19af0d3b29fdb2cf4a6db0669934b948bc6d6",
+        "rev": "2f9b7fd044b9182c97b18caa6143d13089a7f90b",
         "type": "github"
       },
       "original": {
