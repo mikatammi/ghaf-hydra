@@ -886,7 +886,6 @@
           "jetpack-nixos"
         ],
         "lanzaboote": "lanzaboote",
-        "lib-extras": "lib-extras",
         "microvm": [
           "microvm"
         ],
@@ -905,11 +904,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1710232690,
-        "narHash": "sha256-UhtQLC+7jXsgIS4bzahULIrYs9T9tV/5JtI4V0HZ9tM=",
+        "lastModified": 1710234049,
+        "narHash": "sha256-OmQSKQBLEXlbWduUUWQaV26BkV/GKStil7ckaoDucsU=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "c3f5c79dc9fb58dcda7703dad9c668fc9b0d1d3e",
+        "rev": "a53f886e66170f2be7b8d5e5c0410149535fe0b6",
         "type": "github"
       },
       "original": {
@@ -933,7 +932,6 @@
           "jetpack-nixos-new"
         ],
         "lanzaboote": "lanzaboote_2",
-        "lib-extras": "lib-extras_2",
         "microvm": [
           "microvm-new"
         ],
@@ -952,11 +950,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1710232690,
-        "narHash": "sha256-UhtQLC+7jXsgIS4bzahULIrYs9T9tV/5JtI4V0HZ9tM=",
+        "lastModified": 1710234049,
+        "narHash": "sha256-OmQSKQBLEXlbWduUUWQaV26BkV/GKStil7ckaoDucsU=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "c3f5c79dc9fb58dcda7703dad9c668fc9b0d1d3e",
+        "rev": "a53f886e66170f2be7b8d5e5c0410149535fe0b6",
         "type": "github"
       },
       "original": {
@@ -980,7 +978,6 @@
           "jetpack-nixos-unstable"
         ],
         "lanzaboote": "lanzaboote_3",
-        "lib-extras": "lib-extras_3",
         "microvm": [
           "microvm-unstable"
         ],
@@ -999,11 +996,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1710232690,
-        "narHash": "sha256-UhtQLC+7jXsgIS4bzahULIrYs9T9tV/5JtI4V0HZ9tM=",
+        "lastModified": 1710234049,
+        "narHash": "sha256-OmQSKQBLEXlbWduUUWQaV26BkV/GKStil7ckaoDucsU=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "c3f5c79dc9fb58dcda7703dad9c668fc9b0d1d3e",
+        "rev": "a53f886e66170f2be7b8d5e5c0410149535fe0b6",
         "type": "github"
       },
       "original": {
@@ -1027,7 +1024,6 @@
           "jetpack-nixos"
         ],
         "lanzaboote": "lanzaboote_4",
-        "lib-extras": "lib-extras_4",
         "microvm": [
           "microvm"
         ],
@@ -1046,11 +1042,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1710232690,
-        "narHash": "sha256-UhtQLC+7jXsgIS4bzahULIrYs9T9tV/5JtI4V0HZ9tM=",
+        "lastModified": 1710234049,
+        "narHash": "sha256-OmQSKQBLEXlbWduUUWQaV26BkV/GKStil7ckaoDucsU=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "c3f5c79dc9fb58dcda7703dad9c668fc9b0d1d3e",
+        "rev": "a53f886e66170f2be7b8d5e5c0410149535fe0b6",
         "type": "github"
       },
       "original": {
@@ -1074,7 +1070,6 @@
           "jetpack-nixos"
         ],
         "lanzaboote": "lanzaboote_5",
-        "lib-extras": "lib-extras_5",
         "microvm": [
           "microvm"
         ],
@@ -1093,11 +1088,11 @@
         "treefmt-nix": "treefmt-nix_5"
       },
       "locked": {
-        "lastModified": 1710232690,
-        "narHash": "sha256-UhtQLC+7jXsgIS4bzahULIrYs9T9tV/5JtI4V0HZ9tM=",
+        "lastModified": 1710234049,
+        "narHash": "sha256-OmQSKQBLEXlbWduUUWQaV26BkV/GKStil7ckaoDucsU=",
         "owner": "tiiuae",
         "repo": "ghaf",
-        "rev": "c3f5c79dc9fb58dcda7703dad9c668fc9b0d1d3e",
+        "rev": "a53f886e66170f2be7b8d5e5c0410149535fe0b6",
         "type": "github"
       },
       "original": {
@@ -1473,191 +1468,6 @@
         "owner": "nix-community",
         "ref": "v0.3.0",
         "repo": "lanzaboote",
-        "type": "github"
-      }
-    },
-    "lib-extras": {
-      "inputs": {
-        "devshell": [
-          "ghaf",
-          "devshell"
-        ],
-        "flake-parts": [
-          "ghaf",
-          "flake-parts"
-        ],
-        "flake-root": [
-          "ghaf",
-          "flake-root"
-        ],
-        "nixpkgs": [
-          "ghaf",
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "ghaf",
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1699974671,
-        "narHash": "sha256-4EsuPiX4pGEg8ME9ONn8ebY1ZKYLOp9DRCcdTrOj8sY=",
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "rev": "83c8935af27738b8b155e0077522220d81865269",
-        "type": "github"
-      },
-      "original": {
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "type": "github"
-      }
-    },
-    "lib-extras_2": {
-      "inputs": {
-        "devshell": [
-          "ghaf-allnew",
-          "devshell"
-        ],
-        "flake-parts": [
-          "ghaf-allnew",
-          "flake-parts"
-        ],
-        "flake-root": [
-          "ghaf-allnew",
-          "flake-root"
-        ],
-        "nixpkgs": [
-          "ghaf-allnew",
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "ghaf-allnew",
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1699974671,
-        "narHash": "sha256-4EsuPiX4pGEg8ME9ONn8ebY1ZKYLOp9DRCcdTrOj8sY=",
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "rev": "83c8935af27738b8b155e0077522220d81865269",
-        "type": "github"
-      },
-      "original": {
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "type": "github"
-      }
-    },
-    "lib-extras_3": {
-      "inputs": {
-        "devshell": [
-          "ghaf-allunstable",
-          "devshell"
-        ],
-        "flake-parts": [
-          "ghaf-allunstable",
-          "flake-parts"
-        ],
-        "flake-root": [
-          "ghaf-allunstable",
-          "flake-root"
-        ],
-        "nixpkgs": [
-          "ghaf-allunstable",
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "ghaf-allunstable",
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1699974671,
-        "narHash": "sha256-4EsuPiX4pGEg8ME9ONn8ebY1ZKYLOp9DRCcdTrOj8sY=",
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "rev": "83c8935af27738b8b155e0077522220d81865269",
-        "type": "github"
-      },
-      "original": {
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "type": "github"
-      }
-    },
-    "lib-extras_4": {
-      "inputs": {
-        "devshell": [
-          "ghaf-newnixos",
-          "devshell"
-        ],
-        "flake-parts": [
-          "ghaf-newnixos",
-          "flake-parts"
-        ],
-        "flake-root": [
-          "ghaf-newnixos",
-          "flake-root"
-        ],
-        "nixpkgs": [
-          "ghaf-newnixos",
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "ghaf-newnixos",
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1699974671,
-        "narHash": "sha256-4EsuPiX4pGEg8ME9ONn8ebY1ZKYLOp9DRCcdTrOj8sY=",
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "rev": "83c8935af27738b8b155e0077522220d81865269",
-        "type": "github"
-      },
-      "original": {
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "type": "github"
-      }
-    },
-    "lib-extras_5": {
-      "inputs": {
-        "devshell": [
-          "ghaf-nixos-unstable",
-          "devshell"
-        ],
-        "flake-parts": [
-          "ghaf-nixos-unstable",
-          "flake-parts"
-        ],
-        "flake-root": [
-          "ghaf-nixos-unstable",
-          "flake-root"
-        ],
-        "nixpkgs": [
-          "ghaf-nixos-unstable",
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "ghaf-nixos-unstable",
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1699974671,
-        "narHash": "sha256-4EsuPiX4pGEg8ME9ONn8ebY1ZKYLOp9DRCcdTrOj8sY=",
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
-        "rev": "83c8935af27738b8b155e0077522220d81865269",
-        "type": "github"
-      },
-      "original": {
-        "owner": "aldoborrero",
-        "repo": "lib-extras",
         "type": "github"
       }
     },
