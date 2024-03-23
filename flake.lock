@@ -1505,11 +1505,11 @@
         "spectrum": "spectrum"
       },
       "locked": {
-        "lastModified": 1711111650,
-        "narHash": "sha256-O9Zxigd2URo/s9jtogfopAs6g+2aXLptF7DgIyUd6UU=",
+        "lastModified": 1711159783,
+        "narHash": "sha256-nwl2Cygq7NrV9QcebJE/T/vXv7w+zLERD7ygHz0F5g8=",
         "owner": "astro",
         "repo": "microvm.nix",
-        "rev": "ea4cab3cc6ad680a3020166fd18d615b1c15d8df",
+        "rev": "d31f7c7d3194c51372134832a3a2a256773c161a",
         "type": "github"
       },
       "original": {
@@ -1529,11 +1529,11 @@
         "spectrum": "spectrum_2"
       },
       "locked": {
-        "lastModified": 1711111650,
-        "narHash": "sha256-O9Zxigd2URo/s9jtogfopAs6g+2aXLptF7DgIyUd6UU=",
+        "lastModified": 1711159783,
+        "narHash": "sha256-nwl2Cygq7NrV9QcebJE/T/vXv7w+zLERD7ygHz0F5g8=",
         "owner": "astro",
         "repo": "microvm.nix",
-        "rev": "ea4cab3cc6ad680a3020166fd18d615b1c15d8df",
+        "rev": "d31f7c7d3194c51372134832a3a2a256773c161a",
         "type": "github"
       },
       "original": {
